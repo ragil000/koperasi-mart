@@ -1,0 +1,60 @@
+/* Write your custom CSS here */
+.codexv{
+    color: blueviolet;
+}
+
+.product-image{
+    max-height: 35%;
+    height: 35%;
+    width: 100%;
+    border: 2px solid transparent;
+}
+.product-image img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+.product-name{
+    max-height: 25px;
+    height: 25px;
+    width: 100%;
+    border: 0px transparent;
+}
+.product-description{
+    max-height: 70px;
+    height: 70px;
+    width: 100%;
+    font-size: small;
+    border: 0px transparent;
+
+}
+
+.product-image-view{
+    max-height: 45%;
+    height: 45%;
+    width: 100%;
+    border: 2px solid transparent;
+}
+.product-image-view img{
+    height: 150px;
+    width: 100%;
+    /* object-fit: cover; */
+}
+
+.btn-default.active{
+    background-color: rgba(0, 112, 224, 0.349) !important;
+}
+
+.input-error, .input-error:focus {
+    border-color: #EC5E69;
+}
+
+/* .page-header-fixed .page-header{
+    background-color: #63CB89;
+    color: #fff;
+}
+
+.page-header .navbar-default .container-fluid, .page-header .navbar-default .navbar-collapse{
+    background-color: #63CB89;
+    color: #fff;
+} */
