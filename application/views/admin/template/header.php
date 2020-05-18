@@ -10,7 +10,7 @@
         <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         
         <!-- Title -->
-        <title>ecaps - Responsive Admin Dashboard Template</title>
+        <title>Primer Koperasi</title>
 
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -53,11 +53,11 @@
                 <div class="page-sidebar-inner">
                     <div class="page-sidebar-menu">
                         <ul class="accordion-menu">
-                            <!-- <li id="base1" class="base-menu active-page">
-                                <a href="<?=base_url('admin/dashboard')?>">
+                            <li id="base1" class="base-menu active-page">
+                                <a id="sub11" href="<?=base_url('admin/dashboard')?>">
                                     <i class="menu-icon icon-home4"></i><span>Dashboard</span>
                                 </a>
-                            </li> -->
+                            </li>
                             <li id="base2" class="base-menu ">
                                 <a href="javascript:void(0)">
                                     <i class="menu-icon fa fa-cubes"></i><span>Produk</span><i class="accordion-icon fa fa-angle-left"></i>
@@ -84,7 +84,8 @@
                                 </a>
                                 <ul class="sub-menu">
                                     <li><a id="sub41" href="<?=base_url('admin/anggota/daftar-anggota')?>" class="base-sub-menu ">Daftar Anggota</a></li>
-                                    <!-- <li><a id="sub42" href="#" class="base-sub-menu ">Riwayat Pembelian</a></li> -->
+                                    <li><a id="sub42" href="<?=base_url('admin/anggota/daftar-simpanan-wajib')?>" class="base-sub-menu ">Simpanan Wajib</a></li>
+                                    <li><a id="sub43" href="<?=base_url('admin/anggota/daftar-simpanan-pokok')?>" class="base-sub-menu ">Simpanan Pokok</a></li>
                                 </ul>
                             </li>
                             

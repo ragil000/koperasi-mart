@@ -172,4 +172,19 @@ class ProdukModel extends CI_Model {
         }
     }
     
+    public function _getSimpananWajibById(){
+        $this->db->select('tb_simpanan_jumlah');
+        $result = $this->db->get_where('tb_simpanan', ['id_tb_anggota' => $_SESSION['id_tb_anggota'], 'tb_simpanan_jenis' => 'wajib'])->result_array();
+        return $result;
+    }
+
+    public function _getSimpananPokokById(){
+        $result = $this->db->get_where('tb_simpanan', ['id_tb_anggota' => $_SESSION['id_tb_anggota'], 'tb_simpanan_jenis' => 'pokok'])->result_array();
+        return $result;
+    }
+
+    public function _readAnggota($limit = 5, $start = 0){
+        $result = $this->db->get('tb_anggota', $limit, $start)->result_array();
+        return $result;
+    }
 }

@@ -91,7 +91,7 @@
             // menu active
             var allTab = $('.tabAll')
             var tabAll = $('#tabAll')
-            var myTab = $('#tab<?=$result['tab']?>')
+            var myTab = $('#tab<?=@$result['tab']?>')
 
             allTab.removeClass('active')
             tabAll.attr('href', '<?=base_url('daftar-produk/')?>')

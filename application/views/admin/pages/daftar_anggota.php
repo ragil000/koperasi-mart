@@ -24,14 +24,22 @@
                                                     <div id="1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="tambah-produk">
                                                         <div class="panel-body">
                                                             <div class="post">
-                                                                <div class="m-b-md">
-                                                                    <input type="text" id="inputNama" name="tb_anggota_nama" class="form-control" placeholder="Nama">
-                                                                </div>
-                                                                <div class="m-b-md">
-                                                                    <input type="text" id="inputUsername" name="tb_anggota_username" class="form-control" placeholder="Username">
-                                                                </div>
-                                                                <div class="m-b-md">
-                                                                    <input type="text" id="inputPassword" name="tb_snggots_password" class="form-control" placeholder="Password">
+                                                                <div class="row">
+                                                                    <div class="m-b-md col-lg-6">
+                                                                        <input type="text" id="inputNama" name="tb_anggota_nama" class="form-control" placeholder="Nama">
+                                                                    </div>
+                                                                    <div class="m-b-md col-lg-6">
+                                                                        <input type="text" id="inputPhone" name="tb_anggota_phone" class="form-control" placeholder="Nomor Telpon">
+                                                                    </div>
+                                                                    <div class="m-b-md col-lg-12">
+                                                                        <textarea name="tb_anggota_alamat" id="inputAlamat" class="form-control" placeholder="Alamat"></textarea>
+                                                                    </div>
+                                                                    <div class="m-b-md col-lg-6">
+                                                                        <input type="text" id="inputUsername" name="tb_anggota_username" class="form-control" placeholder="Username">
+                                                                    </div>
+                                                                    <div class="m-b-md col-lg-6">
+                                                                        <input type="text" id="inputPassword" name="tb_anggota_password" class="form-control" placeholder="Password">
+                                                                    </div>
                                                                 </div>
                                                                 <div class="post-options">
                                                                     <button type="submit" class="btn btn-default pull-right">Tambahkan</button>
@@ -59,7 +67,8 @@
                                                             <th>No</th>
                                                             <th>Nama</th>
                                                             <th>Username</th>
-                                                            <th>Password</th>
+                                                            <th>Telpon</th>
+                                                            <th>Alamat</th>
                                                             <th>Aksi</th>
                                                         </tr>
                                                     </thead>
@@ -72,7 +81,8 @@
                                                             <th scope="row"><?=$no?></th>
                                                             <td><?=$value['tb_anggota_nama']?></td>
                                                             <td><?=$value['tb_anggota_username']?></td>
-                                                            <td><?=$value['tb_anggota_password']?></td>
+                                                            <td><?=$value['tb_anggota_phone']?></td>
+                                                            <td><?=$value['tb_anggota_alamat']?></td>
                                                             <td>
                                                                 <a href="<?=base_url('admin/anggota/daftar-anggota/delete/'.$value['id_tb_anggota'])?>" class="btn btn-danger delete-produk" role="button">Hapus</a>
                                                             </td>
@@ -133,11 +143,11 @@
                         // end
 
                         // tidak boleh input spasi first
-                        $('#inputNama').keydown(function(e){
-                            if (e.which === 32){
-                                e.preventDefault()
-                            }
-                        })
+                        // $('#inputNama').keydown(function(e){
+                        //     if (e.which === 32){
+                        //         e.preventDefault()
+                        //     }
+                        // })
                         $('#inputUsername').keydown(function(e){
                             if (e.which === 32){
                                 e.preventDefault()
@@ -156,11 +166,15 @@
                                 ignore: "",
                                 rules: {
                                     tb_anggota_nama: "required",
+                                    tb_anggota_phone: "required",
+                                    tb_anggota_alamat: "required",
                                     tb_anggota_username: "required",
                                     tb_anggota_password: "required",
                                 },
                                 messages: {
                                     tb_anggota_nama: 'Tidak boleh kosong.',
+                                    tb_anggota_phone: 'Tidak boleh kosong.',
+                                    tb_anggota_alamat: 'Tidak boleh kosong.',
                                     tb_anggota_username: 'Tidak boleh kosong.',
                                     tb_anggota_password: 'Tidak boleh kosong.',
                                 },

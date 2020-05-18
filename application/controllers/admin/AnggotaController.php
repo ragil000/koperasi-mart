@@ -37,8 +37,8 @@ class AnggotaController extends CI_Controller {
     public function pagination()
     {
         //konfigurasi pagination
-        $config['base_url'] = site_url('admin/anggota/daftar-kategori/'); //site url
-        $config['total_rows'] = $this->db->count_all('tb_kategori'); //total row
+        $config['base_url'] = site_url('admin/anggota/daftar-anggota/'); //site url
+        $config['total_rows'] = $this->db->count_all('tb_anggota'); //total row
         $config['per_page'] = 10;  //show record per halaman
         $config["uri_segment"] = 4;  // uri parameter
         $choice = $config["total_rows"] / $config["per_page"];

@@ -6,7 +6,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="copyright__inner">
                                 <div class="cpy__right--left">
-                                    <p>Primer Koperasi Mart <?=@$_SESSION['id_tb_anggota']?> | <?=date('Y')?></p>
+                                    <p>Primer Koperasi Mart | <?=date('Y')?></p>
                                 </div>
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 <?php
-                        $CI =& get_instance();
-                        $RMY = $CI->LibraryRMYModel;
-                    ?>
+    $CI =& get_instance();
+    $RMY = $CI->LibraryRMYModel;
+?>
                     <!-- Page Inner -->
                     <div class="page-inner">
                         <div class="page-title">
@@ -124,7 +124,7 @@
 
                         // tidak boleh input spasi first
                         $('#inputKategori').keydown(function(e){
-                            if (e.which === 32){
+                            if (this.value.length === 0 && e.which === 32){
                                 e.preventDefault()
                             }
                         })

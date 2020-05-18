@@ -74,6 +74,11 @@ $route['admin/anggota/daftar-anggota/delete/(:num)'] = 'admin/AnggotaController/
 
 $route['admin/transaksi/daftar-transaksi'] = 'admin/TransaksiController/daftarTransaksi';
 
+$route['admin/anggota/daftar-simpanan-wajib'] = 'admin/SimpananController/daftarSimpananWajib';
+$route['admin/anggota/daftar-simpanan-wajib/create'] = 'admin/SimpananController/createSimpananWajib';
+$route['admin/anggota/daftar-simpanan-pokok'] = 'admin/SimpananController/daftarSimpananPokok';
+$route['admin/anggota/daftar-simpanan-pokok/create'] = 'admin/SimpananController/createSimpananPokok';
+
 $route['admin'] = 'admin/LoginController/setLogin';
 $route['admin/login'] = 'admin/LoginController/setLogin';
 $route['admin/logout'] = 'admin/LoginController/setLogout';
@@ -81,6 +86,7 @@ $route['admin/logout'] = 'admin/LoginController/setLogout';
 $route['daftar-produk'] = 'ProdukController/daftarProduk';
 $route['daftar-produk/(:num)'] = 'ProdukController/daftarProduk/$1';
 $route['daftar-produk/kategori/(:num)'] = 'ProdukController/daftarProdukKategori/$1';
+$route['daftar-produk/kategori/(:num)/(:num)'] = 'ProdukController/daftarProdukKategori/$1/$2';
 
 $route['daftar-produk/login'] = 'LoginController/setLogin';
 $route['daftar-produk/logout'] = 'LoginController/setLogout';
@@ -95,3 +101,9 @@ $route['daftar-keranjang/delete/(:num)'] = 'ProdukController/deleteKeranjang/$1'
 $route['daftar-produk/create'] = 'admin/ProdukController/createProduk';
 $route['daftar-produk/delete/(:num)'] = 'admin/ProdukController/deleteProduk/$1';
 
+$route['simpanan'] = 'ProdukController/daftarSimpanan';
+
+$route['tentang'] = 'ProdukController/tentang';
+
+$route['daftar-anggota'] = 'ProdukController/daftarAnggota';
+$route['daftar-anggota/(:num)'] = 'ProdukController/daftarAnggota/$1';

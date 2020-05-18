@@ -25,5 +25,6 @@
         <script src="<?=base_url('adminT/')?>assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
         <script src="<?=base_url('adminT/')?>assets/js/ecaps.min.js"></script>
         <script src="<?=base_url('adminT/')?>assets/js/pages/form-elements.js"></script>
+        <script src="<?=base_url('adminT/')?>assets/js/pages/ui-modals.js"></script>
     </body>
 </html>

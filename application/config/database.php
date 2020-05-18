@@ -75,10 +75,13 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'db_koperasi_mart',
+	// 'hostname' => 'localhost',
+	'username' => 'pold7656_koperasi',
+	// 'username' => 'root',
+	'password' => 'polres2020',
+	// 'password' => '',
+	'database' => 'pold7656_db_koperasi',
+	// 'database' => 'db_koperasi_mart',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -90,7 +93,7 @@ $db['default'] = array(
 	'swap_pre' => '',
 	'encrypt' => FALSE,
 	'compress' => FALSE,
-	'stricton' => FALSE,
+	'stricton' => TRUE,
 	'failover' => array(),
 	'save_queries' => TRUE
 );

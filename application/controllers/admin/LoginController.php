@@ -29,9 +29,9 @@ class LoginController extends CI_Controller {
 
                 $this->session->set_userdata($this->sessionData);
 
-                redirect(base_url()."admin/produk/daftar-produk");
+                redirect(base_url()."admin/dashboard");
             }else{
-                $this->load->view('admin_login', $this->LibraryRMYModel->data);
+                $this->load->view('admin/pages/admin_login', $this->LibraryRMYModel->data);
             }
         }else{
             $this->load->view('admin/pages/admin_login', $this->LibraryRMYModel->data);

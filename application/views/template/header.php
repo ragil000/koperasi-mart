@@ -24,7 +24,6 @@
     
     <!-- jquery -->
     <script src="<?=base_url('depan/')?>js/vendor/jquery-3.2.1.min.js"></script>
-    
 </head>
 <body>
 	<!-- Main wrapper -->
@@ -57,7 +56,10 @@
                                                 ?>
                                             </ul>
                                         </li>
+                                        <li><a href="<?=base_url('simpanan')?>">Simpanan</a></li>
+                                        <li><a href="<?=base_url('daftar-anggota')?>">Daftar Anggota</a></li>
                                         <li><a href="<?=base_url('daftar-keranjang')?>">Keranjang Belanja</a></li>
+                                        <li><a href="<?=base_url('tentang')?>">Profil</a></li>
                                     </ul>
                                 </nav>
                                 

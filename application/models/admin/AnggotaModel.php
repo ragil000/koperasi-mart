@@ -27,7 +27,14 @@ class AnggotaModel extends CI_Model {
     }
 
     public function _readAnggota($limit = 5, $start = 0){
+        $this->db->order_by('tb_anggota_tgl', 'DESC');
         $result = $this->db->get('tb_anggota', $limit, $start)->result_array();
+        return $result;
+    }
+
+    public function _readAnggotaAll(){
+        $this->db->order_by('tb_anggota_tgl', 'DESC');
+        $result = $this->db->get('tb_anggota')->result_array();
         return $result;
     }
 
